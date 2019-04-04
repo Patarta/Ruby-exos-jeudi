@@ -1,17 +1,17 @@
-def say_hello
-  puts " Quel est ton prénom?"
+def ask
+  puts " Quel est ton prénom"
   print "> "
-  first_name = gets.chomp
-  return first_name
+  name = gets.chomp
+  return name
 end
 
-def greet(first_name)
-  puts "Coucou, #{first_name} !"
+def say_hello(name)
+  puts "Bonjour, #{name} !"
 end
 
 def perfom
-  first_name = say_hello
-  greet(first_name)
+  name = ask
+  say_hello(name)
 end
 
 perfom
